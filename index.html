@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe by Chintan Parmar</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <!-- <button type="button" id="toggle-theme">Toggle Theme</button> -->
+    </header>
+    <main>
+      <div id="info-container">
+        <span class="lg" id="infoText">Player turn: X</span>
+      </div>
+      <div id="gameBoard">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"><span class="hidden">X</span></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div id="buttons">
+        <button type="button" id="reset-btn">Reset</button>
+      </div>
+    </main>
+    <footer>
+      <span>
+        <script>
+          const date = new Date();
+          let year = date.getUTCFullYear();
+          document.write(year);
+        </script>
+        <span class="md">&copy;</span>Copyright reserved by
+        <a
+          href="https://github.com/ChintanPramar/tic-tac-toe"
+          target="_blank"
+          id="githubRepo"
+          >@Chintan Parmar</a
+        >
+      </span>
+    </footer>
+  </body>
+</html>

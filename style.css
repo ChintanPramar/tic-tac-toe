@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --header-footer-bg: #43655a;
+  --header-footer-color: #def5f6;
+
+  --all-box-shadow-color: rgb(0, 0, 0);
+  --all-box-shadow: 0px 0px 10px 1px var(--all-box-shadow-color);
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+}
+
+header {
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-color);
+  box-shadow: var(--all-box-shadow);
+  height: 10vh;
+  font-size: 3.3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: calc(100vh - 10vh - 4vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vmax;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: black;
+  gap: 1px;
+  width: max-content;
+  height: max-content;
+  border: 2px solid black;
+  box-shadow: 0px 0px 18px -5px black;
+}
+
+.box {
+  background-color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-align: center;
+  padding: 3vmin 6vmin;
+}
+
+.box:hover {
+  background-color: #c8fcea;
+  cursor: pointer;
+}
+
+#info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vmin;
+}
+
+#reset-btn {
+  width: max-content;
+  padding: 0.6vmin 2vmax;
+  font-size: 170%;
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-color);
+  border: 3px solid #c8fcea;
+  border-radius: 9px;
+}
+
+#reset-btn:hover {
+  cursor: pointer;
+  background-color: #334d44;
+  border-color: #5d9783;
+}
+
+#reset-btn:active {
+  background-color: #1d362d;
+}
+
+footer {
+  box-shadow: var(--all-box-shadow);
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-color);
+  height: 4vh;
+  font-size: 3vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#githubRepo {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.lg {
+  font-size: 4vmax;
+  font-weight: bolder;
+}
+
+.hidden {
+  visibility: hidden;
+}
