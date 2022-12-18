@@ -45,18 +45,19 @@ main {
   grid-template-rows: repeat(3, 1fr);
   background-color: black;
   gap: 1px;
-  width: max-content;
-  height: max-content;
+  width: 40vw;
+  height: 50vh;
   border: 2px solid black;
   box-shadow: 0px 0px 18px -5px black;
+  margin: 1vmin;
 }
 
 .box {
   background-color: white;
-  font-size: 4rem;
+  font-size: 5vmax;
   font-weight: bolder;
   text-align: center;
-  padding: 3vmin 6vmin;
+  padding-top: calc(50% / 50vh * 9);
 }
 
 .box:hover {
@@ -74,7 +75,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2vmin;
 }
 
 #reset-btn {
